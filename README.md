@@ -9,7 +9,7 @@ Este é um projeto desenvolvido como parte de um desafio do <a href="https://www
   - [Links](#-links)
 - [Meu Processo](#-meu-processo)
   - [Descrição](#-descrição)
-  - [Tecnologias utilizadas](#-tecnologias-utilizadas)
+  - [Tecnologias utilizadas](#️-tecnologias-utilizadas)
   - [Paleta de cores](#-paleta-de-cores)
   - [Recursos úteis](#-recursos-úteis)
 - [Autor](#-autor)
