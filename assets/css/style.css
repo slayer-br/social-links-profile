@@ -1,0 +1,143 @@
+/*
+- Green:#c5f82a
+- White: #ffffff
+- Grey 700: #333333
+- Grey 800: #1f1f1f
+- Grey 900: #141414
+*/
+
+:root {
+  --green: #c5f82a;
+  --white: #ffffff;
+  --gray-700: #333333;
+  --gray-800: #1f1f1f;
+  --gray-900: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter";
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--gray-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+  color: var(--white);
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .container {
+      width: 100%;
+      max-width: 280px;
+      background-color: var(--gray-800);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .profile-header {
+          width: 88px;
+          height: 88px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 24px;
+        }
+
+        .profile-name {
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: var(--white);
+          margin: 24px 0 10px 0;
+        }
+
+        .profile-from {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: var(--green);
+          margin-bottom: 30px;
+        }
+
+        .profile-description {
+          font-size: 1.4rem;
+          color: var(--white);
+          margin-bottom: 24px;
+        }
+      }
+      .profile-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .profile-button {
+          display: block;
+          background-color: var(--gray-700);
+          color: var(--white);
+          text-decoration: none;
+          width: 100%;
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 14px;
+          text-align: center;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all ease 0.3s;
+
+          &:hover,
+          &:focus {
+            background-color: var(--green);
+            color: var(--gray-900);
+          }
+        }
+      }
+    }
+  }
+
+  .attribution {
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--white);
+    margin-top: 16px;
+
+    a {
+      color: var(--white);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--green);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  body {
+    main {
+      .container {
+        max-width: 375px;
+      }
+    }
+  }
+}
